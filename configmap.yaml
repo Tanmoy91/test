@@ -1,6 +1,6 @@
 apiVersion: 
 data: 
-  Release: 
+  Release: 1.0.5
   CONTACT_SERVICE_URL: 
   DEAL_RT_BASE_URL: 
   DOCUMENT_LIST_QUERY_ID: 
