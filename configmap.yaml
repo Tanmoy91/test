@@ -1,5 +1,6 @@
 apiVersion: v1
 data:
+  Release: 1.0.0
   CONTACT_SERVICE_URL: 'http://contacts-service/api/v1/contacts'
   DEAL_RT_BASE_URL: 'https://infini8v2-rt-dev.inadev.net/deals'
   DOCUMENT_LIST_QUERY_ID: CEE_675bc37e58f87e762c3ba560
