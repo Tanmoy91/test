@@ -31,7 +31,7 @@ data:
   TU_URL: 'https://uat.tu.tuconline.com/xml/r4.asp'
   TU_USER_REFFERENCE: TEST
   UPLOADED_DOCUMENT_TYPE: pdf
-  WFE_APP_ID: infin8v2
+  WFE_APP_ID: infin8v3
   SUPER_ADMIN_KEYCLOAK_ID: 'fab1371b-4a79-4bf7-a886-932c17dfb1c9'
   EXPENSE_REVENUE_EXPENSE_BASE_URL: 'http://expense-revenue-service/api/v1/expense'
 kind: ConfigMap
