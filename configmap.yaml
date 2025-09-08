@@ -4,7 +4,7 @@ data:
   EXPENSE_EXPENSE_BASE_URL: 'http://ldap-prod-cee-14.svc.local/auth/'
   Author: Tanmoy
   Version: v1
-  Release: 1.0.5
+  Release: 1.5.0
   CONTACT_SERVICE_URL: 'http://contacts-service/api/v1/contacts'
   DEAL_RT_BASE_URL: 'https://infini8v2-rt-dev.inadev.net/deals'
   DOCUMENT_LIST_QUERY_ID: CEE_675bc37e58f87e762c3ba560
