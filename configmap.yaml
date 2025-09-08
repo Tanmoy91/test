@@ -10,7 +10,7 @@ data:
   DOCUMENT_LIST_QUERY_ID: CEE_675bc37e58f87e762c3ba560
   EQUIFAX_CUSTOME_ID: for billing get from Clients
   EQUIFAX_INQUIRY_TYPE: I
-  EQUIFAX_JOINT_ACCESS_INDICATOR: 'N'
+  EQUIFAX_JOINT_ACCESS_INDICATOR: 'Y'
   EQUIFAX_TOKEN_GRANT_TYPE: client_credentials
   EQUIFAX_TOKEN_SCOPE: 'https://api.equifax.ca/inquiry/1.0/sts'
   EQUIFAX_TOKEN_URL: 'https://api.uat.equifax.ca/v2/oauth/token'
