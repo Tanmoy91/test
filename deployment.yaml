@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deals-service
+  name: deals-service-config-map
   namespace: 'namespace_update_here'
 spec:
   replicas: 2
@@ -27,166 +27,166 @@ spec:
             - sh
             - '-c'
           env:
-            - name: OTEL_EXPORTER_OTLP_ENDPOINT
+            - name: deals-service-config-map
               value: 'http://otel-collector.monitoring.svc:4318'
-            - name: OTEL_EXPORTER_OTLP_PROTOCOL
+            - name: deals-service-config-map
               value: http/protobuf
-            - name: OTEL_SERVICE_NAME
+            - name: deals-service-config-map
               value: deals-service
-            - name: PORT
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: PORT
+                  key: 
                   name: deals-service-config-map
-            - name: WFE_APP_ID
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: WFE_APP_ID
+                  key: 
                   name: deals-service-config-map
-            - name: GENERIC_SERVICE_URL
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: GENERIC_SERVICE_URL
+                  key: 
                   name: deals-service-config-map
-            - name: CONTACT_SERVICE_URL
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: CONTACT_SERVICE_URL
+                  key: 
                   name: deals-service-config-map
-            - name: EQUIFAX_URL
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: EQUIFAX_URL
+                  key: 
                   name: deals-service-config-map
-            - name: EQUIFAX_CUSTOME_ID
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: EQUIFAX_CUSTOME_ID
+                  key: 
                   name: deals-service-config-map
-            - name: EQUIFAX_INQUIRY_TYPE
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: EQUIFAX_INQUIRY_TYPE
+                  key: 
                   name: deals-service-config-map
-            - name: EQUIFAX_JOINT_ACCESS_INDICATOR
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: EQUIFAX_JOINT_ACCESS_INDICATOR
+                  key: 
                   name: deals-service-config-map
-            - name: TU_URL
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: TU_URL
+                  key: 
                   name: deals-service-config-map
-            - name: TU_ROUTE_DEST
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: TU_ROUTE_DEST
+                  key: 
                   name: deals-service-config-map
-            - name: TU_ROUTE_TYPE
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: TU_ROUTE_TYPE
+                  key: 
                   name: deals-service-config-map
-            - name: TU_USER_REFFERENCE
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: TU_USER_REFFERENCE
+                  key: 
                   name: deals-service-config-map
-            - name: TU_MEMBER_CODE
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: TU_MEMBER_CODE
+                  key: 
                   name: deals-service-config-map
-            - name: TU_PASSWORD
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: TU_PASSWORD
+                  key: 
                   name: deals-service-config-map
-            - name: TU_PRODUCT
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: TU_PRODUCT
+                  key: 
                   name: deals-service-config-map
-            - name: FILE_MANAGEMENT_BASE_URL
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: FILE_MANAGEMENT_BASE_URL
+                  key: 
                   name: deals-service-config-map
-            - name: UPLOADED_DOCUMENT_TYPE
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: UPLOADED_DOCUMENT_TYPE
+                  key: 
                   name: deals-service-config-map
-            - name: DOCUMENT_LIST_QUERY_ID
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: DOCUMENT_LIST_QUERY_ID
+                  key: 
                   name: deals-service-config-map
-            - name: DEAL_RT_BASE_URL
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: DEAL_RT_BASE_URL
+                  key: 
                   name: deals-service-config-map
-            - name: EQUIFAX_TOKEN_SCOPE
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: EQUIFAX_TOKEN_SCOPE
+                  key: 
                   name: deals-service-config-map
-            - name: EQUIFAX_TOKEN_GRANT_TYPE
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: EQUIFAX_TOKEN_GRANT_TYPE
+                  key: 
                   name: deals-service-config-map
-            - name: FINMO_SERVICE_URL
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: FINMO_SERVICE_URL
+                  key: 
                   name: deals-service-config-map
-            - name: EQUIFAX_TOKEN_URL
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: EQUIFAX_TOKEN_URL
+                  key: 
                   name: deals-service-config-map
-            - name: REDIS_SENTINEL_HOST
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: REDIS_SENTINEL_HOST
+                  key: 
                   name: deals-service-config-map
-            - name: REDIS_SENTINEL_PORT
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: REDIS_SENTINEL_PORT
+                  key: 
                   name: deals-service-config-map
-            - name: REDIS_MASTER_NAME
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: REDIS_MASTER_NAME
+                  key: 
                   name: deals-service-config-map
-            - name: REDIS_PASSWORD
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: REDIS_PASSWORD
+                  key: 
                   name: deals-service-config-map
-            - name: PRESIGNED_URL_GROUP_ID
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: PRESIGNED_URL_GROUP_ID
+                  key: 
                   name: deals-service-config-map
-            - name: PRESIGNED_URL_USERNAME
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: PRESIGNED_URL_USERNAME
+                  key: 
                   name: deals-service-config-map
-            - name: SUPER_ADMIN_KEYCLOAK_ID
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: SUPER_ADMIN_KEYCLOAK_ID
+                  key: 
                   name: deals-service-config-map
-            - name: EXPENSE_REVENUE_EXPENSE_BASE_URL
+            - name: deals-service-config-map
               valueFrom:
                 configMapKeyRef:
-                  key: EXPENSE_REVENUE_EXPENSE_BASE_URL
+                  key: 
                   name: deals-service-config-map
           image: 'repository_name_update_here:image_tag_update_here'
           imagePullPolicy: IfNotPresent
@@ -204,7 +204,7 @@ spec:
             tcpSocket:
               port: 3000
             timeoutSeconds: 1
-          name: deals-service
+          name: deals-service-config-map
           ports:
             - containerPort: 3000
               protocol: TCP
@@ -236,13 +236,13 @@ spec:
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: deals-service-hpa
+  name: deals-service-config-map
   namespace: 'namespace_update_here'
 spec:
   maxReplicas: 5
   metrics:
     - resource:
-        name: cpu
+        name: deals-service-config-map
         target:
           averageUtilization: 80
           type: Utilization
@@ -251,12 +251,12 @@ spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: deals-service
+    name: deals-service-config-map
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: deals-service
+  name: deals-service-config-map
   namespace: 'namespace_update_here'
 spec:
   ports:
