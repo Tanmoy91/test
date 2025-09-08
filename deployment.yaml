@@ -27,6 +27,7 @@ spec:
             - sh
             - '-c'
           env:
+- name: EXPENSE_REVENUE_EXPENSE_BASE_URL        valueFrom:          configMapKeyRef:            key: EXPENSE_REVENUE_EXPENSE_BASE_URL            name: deals-service-config-map
             - name: deals-service-config-map
               value: 'http://otel-collector.monitoring.svc:4318'
             - name: deals-service-config-map
