@@ -31,6 +31,7 @@ data:
   WFE_APP_ID: infin8v2
   SUPER_ADMIN_KEYCLOAK_ID: 'fab1371b-4a79-4bf7-a886-932c17dfb1c9'
   EXPENSE_REVENUE_EXPENSE_BASE_URL: 'http://expense-revenue-service/api/v1/expense'
+  phoneno: "9876543211"
 kind: ConfigMap
 metadata:
   name: deals-service-config-map
