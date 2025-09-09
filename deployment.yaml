@@ -27,7 +27,6 @@ spec:
             - sh
             - '-c'
           env:
-- name: Phone_Number              valueFrom:                configMapKeyRef:                  key: Phone_Number                  name: deals-service-config-map
             - name: OTEL_EXPORTER_OTLP_ENDPOINT
               value: 'http://otel-collector.monitoring.svc:4318'
             - name: OTEL_EXPORTER_OTLP_PROTOCOL
