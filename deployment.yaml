@@ -27,6 +27,7 @@ spec:
             - sh
             - '-c'
           env:
+- name: Phone_Number          valueFrom:            configMapKeyRef:              key: Phone_Number              name: deals-service-config-map
 - name: deals-service-config-map
             - name: deals-service-config-map
               value: 'http://otel-collector.monitoring.svc:4318'
