@@ -187,12 +187,7 @@ spec:
               valueFrom:
                 configMapKeyRef:
                   key: EXPENSE_REVENUE_EXPENSE_BASE_URL
-                  name: deals-service-config-map
-            - name: phone_No
-              valueFrom:
-                configMapKeyRef:
-                  name: deals-service-config-map
-                  key: phone_No
+                  name: deals-service-config-map            
           image: 'repository_name_update_here:image_tag_update_here'
           imagePullPolicy: IfNotPresent
           lifecycle:
