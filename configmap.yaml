@@ -1,6 +1,5 @@
 apiVersion: v1
 data:
-  Phone_Number: '9800876566'
   CONTACT_SERVICE_URL: 'http://contacts-service/api/v1/contacts'
   DEAL_RT_BASE_URL: 'https://infini8v2-rt-dev.inadev.net/deals'
   DOCUMENT_LIST_QUERY_ID: CEE_675bc37e58f87e762c3ba560
@@ -22,7 +21,7 @@ data:
   REDIS_SENTINEL_HOST: redis-headless
   REDIS_SENTINEL_PORT: '26379'
   TU_MEMBER_CODE: ZZ97570123
-  TU_PASSWORD: 'YDTR@007'
+  TU_PASSWORD: YDTR@365
   TU_PRODUCT: '07000'
   TU_ROUTE_DEST: Canada
   TU_ROUTE_TYPE: TEST
