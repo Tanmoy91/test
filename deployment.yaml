@@ -21,8 +21,8 @@ spec:
       containers:
         - args:
             - >
-              sh /opt/application/env-deals.sh && node --require
-              '@opentelemetry/auto-instrumentations-node/register' dist/main.js
+              sh /opt/application/env-deals.sh && node --require '@opentelemetry/auto-instrumentations-node/register' dist/main.js
+
           command:
             - sh
             - '-c'
@@ -188,6 +188,11 @@ spec:
                 configMapKeyRef:
                   key: EXPENSE_REVENUE_EXPENSE_BASE_URL
                   name: deals-service-config-map
+            - name: phone_No
+              valueFrom:
+                configMapKeyRef:
+                  name: deals-service-config-map
+                  key: phone_No
           image: 'repository_name_update_here:image_tag_update_here'
           imagePullPolicy: IfNotPresent
           lifecycle:
@@ -252,6 +257,15 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: deals-service
+  template:
+    spec:
+      containers:
+        - env:
+            - name: phone_No
+              valueFrom:
+                configMapKeyRef:
+                  name: deals-service-config-map
+                  key: phone_No
 ---
 apiVersion: v1
 kind: Service
@@ -267,4 +281,12 @@ spec:
     app: deals-service
   sessionAffinity: None
   type: ClusterIP
- 
+  template:
+    spec:
+      containers:
+        - env:
+            - name: phone_No
+              valueFrom:
+                configMapKeyRef:
+                  name: deals-service-config-map
+                  key: phone_No
