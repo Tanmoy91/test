@@ -5,7 +5,7 @@ data:
   DOCUMENT_LIST_QUERY_ID: CEE_675bc37e58f87e762c3ba560
   EQUIFAX_CUSTOME_ID: for billing get from Clients
   EQUIFAX_INQUIRY_TYPE: I
-  EQUIFAX_JOINT_ACCESS_INDICATOR: 'Y'
+  EQUIFAX_JOINT_ACCESS_INDICATOR: 'N'
   EQUIFAX_TOKEN_GRANT_TYPE: client_credentials
   EQUIFAX_TOKEN_SCOPE: 'https://api.equifax.ca/inquiry/1.0/sts'
   EQUIFAX_TOKEN_URL: 'https://api.uat.equifax.ca/v2/oauth/token'
@@ -31,11 +31,6 @@ data:
   WFE_APP_ID: infin8v2
   SUPER_ADMIN_KEYCLOAK_ID: 'fab1371b-4a79-4bf7-a886-932c17dfb1c9'
   EXPENSE_REVENUE_EXPENSE_BASE_URL: 'http://expense-revenue-service/api/v1/expense'
-  Phone_Number: "9800876566"
-  AWS_ACCOUNT_NUMBER: "88913245687"
-  name: tanmoy C
-  app: myapp
-  version: 3.4.1
 kind: ConfigMap
 metadata:
   name: deals-service-config-map
