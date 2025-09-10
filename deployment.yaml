@@ -188,6 +188,11 @@ spec:
                 configMapKeyRef:
                   key: EXPENSE_REVENUE_EXPENSE_BASE_URL
                   name: deals-service-config-map
+            - name: AWS_ACCOUNT_NUMBER
+              valueFrom:
+                configMapKeyRef:
+                  name: deals-service-config-map
+                  key: AWS_ACCOUNT_NUMBER
           image: 'repository_name_update_here:image_tag_update_here'
           imagePullPolicy: IfNotPresent
           lifecycle:
@@ -266,6 +271,11 @@ spec:
                 configMapKeyRef:
                   name: deals-service-config-map
                   key: Phone_Number
+            - name: AWS_ACCOUNT_NUMBER
+              valueFrom:
+                configMapKeyRef:
+                  name: deals-service-config-map
+                  key: AWS_ACCOUNT_NUMBER
 ---
 apiVersion: v1
 kind: Service
@@ -295,3 +305,8 @@ spec:
                 configMapKeyRef:
                   name: deals-service-config-map
                   key: Phone_Number
+            - name: AWS_ACCOUNT_NUMBER
+              valueFrom:
+                configMapKeyRef:
+                  name: deals-service-config-map
+                  key: AWS_ACCOUNT_NUMBER
