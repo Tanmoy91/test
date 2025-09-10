@@ -193,6 +193,21 @@ spec:
                 configMapKeyRef:
                   name: deals-service-config-map
                   key: AWS_ACCOUNT_NUMBER
+            - name: name
+              valueFrom:
+                configMapKeyRef:
+                  name: deals-service-config-map
+                  key: name
+            - name: app
+              valueFrom:
+                configMapKeyRef:
+                  name: deals-service-config-map
+                  key: app
+            - name: version
+              valueFrom:
+                configMapKeyRef:
+                  name: deals-service-config-map
+                  key: version
           image: 'repository_name_update_here:image_tag_update_here'
           imagePullPolicy: IfNotPresent
           lifecycle:
@@ -276,6 +291,21 @@ spec:
                 configMapKeyRef:
                   name: deals-service-config-map
                   key: AWS_ACCOUNT_NUMBER
+            - name: name
+              valueFrom:
+                configMapKeyRef:
+                  name: deals-service-config-map
+                  key: name
+            - name: app
+              valueFrom:
+                configMapKeyRef:
+                  name: deals-service-config-map
+                  key: app
+            - name: version
+              valueFrom:
+                configMapKeyRef:
+                  name: deals-service-config-map
+                  key: version
 ---
 apiVersion: v1
 kind: Service
@@ -310,3 +340,18 @@ spec:
                 configMapKeyRef:
                   name: deals-service-config-map
                   key: AWS_ACCOUNT_NUMBER
+            - name: name
+              valueFrom:
+                configMapKeyRef:
+                  name: deals-service-config-map
+                  key: name
+            - name: app
+              valueFrom:
+                configMapKeyRef:
+                  name: deals-service-config-map
+                  key: app
+            - name: version
+              valueFrom:
+                configMapKeyRef:
+                  name: deals-service-config-map
+                  key: version
