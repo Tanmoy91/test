@@ -13,7 +13,7 @@ data:
   FILE_MANAGEMENT_BASE_URL: 'http://file-management-service'
   FINMO_SERVICE_URL: 'http://finmo-integration-service/api/v1/finmo-adapter'
   GENERIC_SERVICE_URL: 'http://generic-application-service'
-  PORT: '3000'
+  PORT: '3001'
   PRESIGNED_URL_GROUP_ID: testing
   PRESIGNED_URL_USERNAME: harish.singh
   REDIS_MASTER_NAME: mymaster
